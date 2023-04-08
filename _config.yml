@@ -1,65 +1,76 @@
-# The Site Configuration
+# Configuración del sitio
 
-# Import the theme
+# Importamos el tema
 theme: jekyll-theme-chirpy
 
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
+
+# Cambia el siguiente valor a '/PROJECT_NAME' SÓLO SI tu tipo de sitio es GitHub Pages Sitios de proyecto
+# Y no tiene dominio perzonalizado
 baseurl: ""
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+
+# El idioma de la página web ' http://www.lingoes.net/en/translator/langcode.htm
+# Si tiene el mismo nombre que uno de los archivos en la carpeta `_data/locales`, el idioma de la interfaz también cambiará,
+# de lo contrario, el idioma de la interfaz usará el valor predeterminado de 'en'.
 lang: en
 
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# Cambia tu zona horaria › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: America/New_York
+
+# Configuración de las etiquetas de SEO de Jekyll 
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Página Personal # Titulo principal de la pagina
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Jhonattan David Florez Useche # Subtitulo de la pagina
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >- # utilizado por seo meta y el atom feed
+  Jhonattan David Florez Useche
 
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+# introduzca el protocolo y el nombre de host de su sitio web, e.g., 'https://username.github.io'
+url: "https://Jhonatan2022.githib.io"
 
 github:
-  username: github_username # change to your github username
+  username: Jhonatan2022 # Cambia a tu nombre de usuario de GitHub
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: florez_useche # Cambia a tu nombre de usuario de Twitter
+
+facebook:
+  username: Jhonatan Florez # Cambia a tu nombre de usuario de Facebook
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  # Cambia a tu nombre
+  # Aparecerá como autor por defecto de las entradas y propietario del copyright en el Pie de página
+  name: Jhonattan David Florez Useche
+  # Cambia a tu correo electrónico
+  email: Florezj328@gmail.com
+
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    # El primer elemento sirve de enlace con el titular de los derechos de autor
+    # - https://twitter.com/florez_useche # Cambia a tu cuenta de Twitter
+    - https://github.com/jhonatan2022 # Cambia a tu cuenta de GitHub
+    # Descomente abajo para añadir más enlaces sociales
+    - https://www.facebook.com/jhonatan.florez.7923
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: # Cambia a tu código de verificación de Google Search Console
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# Fin de la configuración de las etiquetas de SEO de Jekyll
 
+# Configuración de la página de inicio
 google_analytics:
-  id: # fill in your Google Analytics ID
-  # Google Analytics pageviews report settings
+  id: # introduzca su ID de Google Analytics
+  # Configuración del informe de visitas de Google Analytics
+  # https://developers.google.com/analytics/devguides/reporting/embed/v1/component-reference#configuration-options
   pv:
-    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
-    cache_path: # the local PV cache data, friendly to visitors from GFW region
+    proxy_endpoint: # rellene el punto final superProxy de Google Analytics de Google App Engine
+    cache_path: # los datos de la caché fotovoltaica local, amigable para los visitantes de la región GFW
 
-# Prefer color scheme setting.
+# Prefiera la configuración de la combinación de colores.
 #
 # Note: Keep empty will follow the system prefer color by default,
 # and there will be a toggle to switch the theme between dark and light
@@ -77,10 +88,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://avatars.githubusercontent.com/u/101368711?v=4
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://avatars.githubusercontent.com/u/101368711?v=4
 
 # boolean type, the global switch for TOC in posts.
 toc: true
