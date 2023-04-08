@@ -1,0 +1,210 @@
+# Configuración del sitio
+
+# Importamos el tema
+theme: jekyll-theme-chirpy
+
+
+# Cambia el siguiente valor a '/PROJECT_NAME' SÓLO SI tu tipo de sitio es GitHub Pages Sitios de proyecto
+# Y no tiene dominio perzonalizado
+baseurl: ""
+
+
+# El idioma de la página web ' http://www.lingoes.net/en/translator/langcode.htm
+# Si tiene el mismo nombre que uno de los archivos en la carpeta `_data/locales`, el idioma de la interfaz también cambiará,
+# de lo contrario, el idioma de la interfaz usará el valor predeterminado de 'en'.
+lang: en
+
+
+# Cambia tu zona horaria › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: America/New_York
+
+# Configuración de las etiquetas de SEO de Jekyll 
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: Página Personal # Titulo principal de la pagina
+
+tagline: Jhonattan David Florez Useche # Subtitulo de la pagina
+
+description: >- # utilizado por seo meta y el atom feed
+  Jhonattan David Florez Useche
+
+# introduzca el protocolo y el nombre de host de su sitio web, e.g., 'https://username.github.io'
+url: "https://Jhonatan2022.githib.io"
+
+github:
+  username: Jhonatan2022 # Cambia a tu nombre de usuario de GitHub
+
+twitter:
+  username: florez_useche # Cambia a tu nombre de usuario de Twitter
+
+facebook:
+  username: Jhonatan Florez # Cambia a tu nombre de usuario de Facebook
+
+social:
+  # Cambia a tu nombre
+  # Aparecerá como autor por defecto de las entradas y propietario del copyright en el Pie de página
+  name: Jhonattan David Florez Useche
+  # Cambia a tu correo electrónico
+  email: Florezj328@gmail.com
+
+  links:
+    # El primer elemento sirve de enlace con el titular de los derechos de autor
+    # - https://twitter.com/florez_useche # Cambia a tu cuenta de Twitter
+    - https://github.com/jhonatan2022 # Cambia a tu cuenta de GitHub
+    # Descomente abajo para añadir más enlaces sociales
+    - https://www.facebook.com/jhonatan.florez.7923
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: # Cambia a tu código de verificación de Google Search Console
+
+# ↑ --------------------------
+# Fin de la configuración de las etiquetas de SEO de Jekyll
+
+# Configuración de la página de inicio
+google_analytics:
+  id: # introduzca su ID de Google Analytics
+  # Configuración del informe de visitas de Google Analytics
+  # https://developers.google.com/analytics/devguides/reporting/embed/v1/component-reference#configuration-options
+  pv:
+    proxy_endpoint: # rellene el punto final superProxy de Google Analytics de Google App Engine
+    cache_path: # los datos de la caché fotovoltaica local, amigable para los visitantes de la región GFW
+
+# Prefiera la configuración de la combinación de colores.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode: # [light|dark]
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: https://avatars.githubusercontent.com/u/101368711?v=4
+
+# the avatar on sidebar, support local or CORS resources
+avatar: https://avatars.githubusercontent.com/u/101368711?v=4
+
+# boolean type, the global switch for TOC in posts.
+toc: true
+
+comments:
+  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # optional, default to 'pathname'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development|production]
+
+pwa:
+  enabled: true # the option for PWA feature
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
